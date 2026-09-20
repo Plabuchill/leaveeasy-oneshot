@@ -1,0 +1,16 @@
+// ─────────────────────────────────────────────────────────────
+// firestore.rules — กฎเฝ้าข้อมูลของ LeaveEasy
+// สัปดาห์ที่ 7: กฎขั้นต่ำ "ต้องล็อกอินก่อน ถึงอ่าน/เขียนได้" — ยังไม่แยกสิทธิ์ตามบทบาท/เจ้าของ
+// (กฎรายห้องแบบครบชุดตามบทบาท employee/manager/hr มาในสัปดาห์ที่ 8)
+//
+// ครอบทุกโฟลเดอร์ รวมโฟลเดอร์ย่อย approvals ที่ซ้อนอยู่ใน leaveRequests/{id}/approvals
+// ด้วย match /{document=**} แบบเดียว
+// ─────────────────────────────────────────────────────────────
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

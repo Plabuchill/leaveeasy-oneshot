@@ -26,14 +26,17 @@ window.firebaseConfig = {
 };
 
 // ตั้งค่า Firebase ให้ระบบใช้งานได้ · กันไว้ไม่ให้หน้าเว็บพังถ้ายังไม่ได้ใส่ค่าจริง
-// ถ้ายังเป็นค่า placeholder อยู่ (หรือใส่ค่าผิด) window.db จะเป็น null แทนที่จะทำให้หน้าเว็บ error
+// ถ้ายังเป็นค่า placeholder อยู่ (หรือใส่ค่าผิด) window.db / window.auth จะเป็น null แทนที่จะทำให้หน้าเว็บ error
 window.db = null;
+window.auth = null; // สัปดาห์ที่ 7: ใช้ Firebase Authentication (ต้องโหลด firebase-auth-compat.js มาก่อนไฟล์นี้)
 try {
   if (window.firebaseConfig.apiKey && window.firebaseConfig.apiKey !== "PASTE_YOUR_API_KEY_HERE") {
     firebase.initializeApp(window.firebaseConfig);
     window.db = firebase.firestore();
+    window.auth = firebase.auth();
   }
 } catch (err) {
   console.error("ตั้งค่า Firebase ไม่สำเร็จ:", err);
   window.db = null;
+  window.auth = null;
 }

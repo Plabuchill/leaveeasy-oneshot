@@ -8,6 +8,7 @@
 (function () {
   var เมนู = [
     { href: "index.html",             ชื่อ: "หน้าแรก" },
+    { href: "dashboard.html",         ชื่อ: "แดชบอร์ด" },
     { href: "leave-requests.html",    ชื่อ: "รายการใบลา" },
     { href: "new-leave-request.html", ชื่อ: "ยื่นใบลาใหม่" },
     { href: "leave-types.html",       ชื่อ: "ประเภทการลา" }

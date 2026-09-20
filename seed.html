@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ใส่ข้อมูลตัวอย่าง · LeaveEasy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 ใส่ข้อมูลตัวอย่างลง Firestore</h1>
+    <p class="subtitle">
+      หน้านี้เป็นเครื่องมือใช้ครั้งเดียวตอนติดตั้งโปรเจกต์ ไม่ใช่หน้าจอของระบบ
+      (ไม่มีลิงก์มาหน้านี้จากเมนูหลัก เปิดตรง ๆ ด้วยการพิมพ์ชื่อไฟล์ในเบราว์เซอร์)
+    </p>
+
+    <div class="card">
+      <h2>ก่อนกดปุ่ม</h2>
+      <p>ตรวจว่าใส่ค่าจริงใน <code>js/firebase-config.js</code> แล้ว (ดู SETUP.md ขั้นที่ 1-4)</p>
+      <p>กดปุ่มนี้ได้หลายครั้งโดยไม่ต้องกลัวข้อมูลซ้ำ — ใช้รหัสเอกสารคงที่เดิมทุกครั้ง (เขียนทับค่าเดิม ไม่เพิ่มไฟล์ใหม่)</p>
+      <div class="btn-row">
+        <button id="ปุ่มใส่ข้อมูล">ใส่ข้อมูลตัวอย่างลง Firestore</button>
+      </div>
+    </div>
+
+    <div id="สถานะ"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/seed.js"></script>
+</body>
+</html>

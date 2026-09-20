@@ -17,12 +17,12 @@
 // ─────────────────────────────────────────────────────────────
 
 window.firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY_HERE",
-  authDomain: "your-project-id.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project-id.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000000:web:0000000000000000000000"
+  apiKey: "AIzaSyAwyKHSNZ9g0gxKnQjhknSujrK7PN5gCy8",
+  authDomain: "leaveeasy-oneshot-390ee.firebaseapp.com",
+  projectId: "leaveeasy-oneshot-390ee",
+  storageBucket: "leaveeasy-oneshot-390ee.firebasestorage.app",
+  messagingSenderId: "1026733586124",
+  appId: "1:1026733586124:web:6613564f5617bb23253469"
 };
 
 // ตั้งค่า Firebase ให้ระบบใช้งานได้ · กันไว้ไม่ให้หน้าเว็บพังถ้ายังไม่ได้ใส่ค่าจริง
